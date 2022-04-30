@@ -6,19 +6,12 @@ import Diagram from "./components/Diagram";
 import ParameterCard from "./components/ParameterCard";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import axios from 'axios'
 
 function App() {
   const dispatch = useDispatch();
-  const getAPI = async () => {
-    await axios
-      .get("https:sinabariba-andre.herokuapp.com/api/dummy-data-sparing")
-      .then((x) => {
-        dispatch({ type: "GET_DATA", payload: x.data });
-      });
-  };
+  
   useEffect(() => {
-    const interval = setInterval(() => getAPI(), 10000);
+    
 
     dispatch({
       type: "SET_CHART",
@@ -38,9 +31,7 @@ function App() {
       },
     });
 
-    return () => {
-      clearInterval(interval);
-    };
+    
   });
   return (
     <Layout className="layout">
