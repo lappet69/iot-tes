@@ -2,7 +2,7 @@ import "./custom.scss";
 import Filter from "./Filter";
 import { connect, useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-// import axios from "axios";
+import axios from "axios";
 import { IoIosWarning } from "react-icons/io";
 import { dummy } from "./data/data";
 
@@ -37,18 +37,18 @@ const Card = () => {
     });
   };
 
-  const getAPI = () => {
-    // axios.defaults.baseURL = "https:sinabariba-andre.herokuapp.com";
-    // await axios
-    //   .get("/dummy-data-sparing", {
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //   })
-    //   .then((x) => {
-    //     dispatch({ type: "GET_DATA", payload: x.data });
-    //   });
-      dispatch({ type: "GET_DATA", payload:dummy })
+  const getAPI = async() => {
+    axios.defaults.baseURL = "https:sinabariba-andre.herokuapp.com";
+    await axios
+      .get("/dummy-data-sparing", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((x) => {
+        dispatch({ type: "GET_DATA", payload: x.data });
+      });
+      // dispatch({ type: "GET_DATA", payload:dummy })
       
   };
 
