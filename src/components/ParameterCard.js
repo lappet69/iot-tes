@@ -37,7 +37,7 @@ const Card = () => {
     });
   };
 
-  const getAPI = async () => {
+  const getAPI = () => {
     // axios.defaults.baseURL = "https:sinabariba-andre.herokuapp.com";
     // await axios
     //   .get("/dummy-data-sparing", {
