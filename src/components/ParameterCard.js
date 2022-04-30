@@ -36,7 +36,11 @@ const Card = () => {
   };
   
   const getAPI = async()=>{
-   await axios.get('https:sinabariba-andre.herokuapp.com/dummy-data-sparing').then((x)=>{dispatch({ type: "GET_DATA", payload: x.data });})
+   await axios.get('https:sinabariba-andre.herokuapp.com/dummy-data-sparing',{
+    headers: {
+       'Content-Type': 'application/json'
+    } 
+ }).then((x)=>{  dispatch({ type: "GET_DATA", payload: x.data });})
   }
  
   useEffect(() => {
