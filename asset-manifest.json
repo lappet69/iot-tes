@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iot-tes/static/css/main.f56ed474.css",
+    "main.js": "/iot-tes/static/js/main.cd98f4b8.js",
+    "index.html": "/iot-tes/index.html",
+    "main.f56ed474.css.map": "/iot-tes/static/css/main.f56ed474.css.map",
+    "main.cd98f4b8.js.map": "/iot-tes/static/js/main.cd98f4b8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f56ed474.css",
+    "static/js/main.cd98f4b8.js"
+  ]
+}
