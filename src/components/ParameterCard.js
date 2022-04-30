@@ -2,7 +2,7 @@ import "./custom.scss";
 import Filter from "./Filter";
 import { connect, useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import axios from 'axios';
+// import axios from 'axios';
 import {IoIosWarning} from 'react-icons/io'
 
 
@@ -35,16 +35,16 @@ const Card = () => {
     ],} });
   };
   
-  const getAPI = async()=>{
-   await axios.get('https:sinabariba-andre.herokuapp.com/api/dummy-data-sparing').then((x)=>{dispatch({ type: "GET_DATA", payload: x.data });})
-  }
+  // const getAPI = async()=>{
+  //  await axios.get('https:sinabariba-andre.herokuapp.com/api/dummy-data-sparing').then((x)=>{dispatch({ type: "GET_DATA", payload: x.data });})
+  // }
  
   useEffect(() => {
-    const interval = setInterval(() => getAPI(), 10000);  
+    // const interval = setInterval(() => getAPI(), 10000);  
     
-    return () => {
-      clearInterval(interval);
-    };
+    // return () => {
+    //   clearInterval(interval);
+    // };
     
     
   });
