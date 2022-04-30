@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/iot-tes/static/css/main.e452e655.css",
-    "main.js": "/iot-tes/static/js/main.33b12991.js",
+    "main.js": "/iot-tes/static/js/main.d46197e9.js",
     "index.html": "/iot-tes/index.html",
     "main.e452e655.css.map": "/iot-tes/static/css/main.e452e655.css.map",
-    "main.33b12991.js.map": "/iot-tes/static/js/main.33b12991.js.map"
+    "main.d46197e9.js.map": "/iot-tes/static/js/main.d46197e9.js.map"
   },
   "entrypoints": [
     "static/css/main.e452e655.css",
-    "static/js/main.33b12991.js"
+    "static/js/main.d46197e9.js"
   ]
 }
